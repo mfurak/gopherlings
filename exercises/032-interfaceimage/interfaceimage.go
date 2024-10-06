@@ -5,8 +5,6 @@
 // It is a curiously simple interface but broad in scope. In a few lines
 // of code we may define an entire image.
 
-// I AM STILL GOING
-
 package main
 
 import (
@@ -34,7 +32,7 @@ func main() {
 	// By setting the value of s (stars type) we'll change the probability
 	// of there being a star on any given pixel. Try setting it to a value
 	// between 0 and 100 and run the code again.
-	var s stars
+	var s stars = 99
 	err = png.Encode(fp, s)
 	if err != nil {
 		log.Fatal(err)

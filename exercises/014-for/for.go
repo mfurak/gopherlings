@@ -17,9 +17,9 @@
 //  }
 //
 
-// I AM STILL GOING
-
 package main
+
+import "fmt"
 
 func main() {
 	// Snap, this for syntax is hard to remember!
@@ -30,7 +30,7 @@ func main() {
 	//  1. The first statement is the init (runs once at start)
 	//  2. Second is the condition. For loop executes while condition yields true
 	//  3. Third is the post statement. This runs at the end of each loop.
-	for i <= 3; i := 0;  i = i + 1 {
+	for i := 0; i <= 3; i = i + 1 {
 		fmt.Println(i)
 	}
 }

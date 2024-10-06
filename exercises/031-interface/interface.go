@@ -9,8 +9,6 @@
 //
 // The most common interfaces in Go are the io.Reader and io.Writer interfaces.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -23,8 +21,8 @@ func main() {
 	// These lines below once uncommented should run with no problem once the
 	// problem at hand has been solved.
 
-	// d := Decimal(myNumber)
-	// PrintNumber(d)
+	d := Decimal(myNumber)
+	PrintNumber(d)
 
 	b := Binary(myNumber)
 	PrintNumber(b)
@@ -80,4 +78,10 @@ func (r Roman) Numeral() (numeral string) {
 		numeral = "error: roman numeral too large"
 	}
 	return numeral
+}
+
+type Decimal float64
+
+func (d Decimal) Numeral() string {
+	return fmt.Sprintf("%f", d)
 }

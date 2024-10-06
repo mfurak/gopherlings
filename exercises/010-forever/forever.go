@@ -11,8 +11,6 @@
 // condition to evaluate to true. Since `i` is never changed the code is run
 // forever.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -22,5 +20,6 @@ func main() {
 	for i <= 3 {
 		fmt.Println(i) // Prints out numbers 0 to 3
 		// Did we forget to add 1 to something?
+		i++
 	}
 }

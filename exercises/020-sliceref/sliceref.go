@@ -10,15 +10,13 @@
 //
 // This reference behaviour may be clearer after learning about pointers.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
 
 func main() {
 	fibonacci := []int{0, 1, 1, 2, 3, 5, 8, 13}
-	fiboAdded := fibonacci
+	fiboAdded := clone(fibonacci)
 	for i := range fiboAdded {
 		fiboAdded[i] += i
 	}

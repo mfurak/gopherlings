@@ -1,7 +1,5 @@
 // Problem:
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -21,6 +19,9 @@ type userDatabase struct {
 }
 
 // Methods are usually found below the type definition in Go.
+func (db *userDatabase) AddAdmin(email string) {
+	db.admins = append(db.admins, email)
+}
 
 // IsAdmin returns true if the email is inside the admin database
 // and false otherwise.

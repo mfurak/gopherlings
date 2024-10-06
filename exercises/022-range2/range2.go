@@ -1,8 +1,6 @@
 // Problem:
 // TODO
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -21,8 +19,8 @@ func main() {
 	// map accesses and print out fruits scoring
 	// higher than 7.
 	for k, v := range fruitScores {
-		if fruitScores[k] > 7 {
-			fmt.Println(k, " has score ", fruitScores[k])
+		if v > 7 {
+			fmt.Println(k, " has score ", v)
 		}
 	}
 }

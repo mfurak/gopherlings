@@ -14,8 +14,6 @@
 //  elements = append(elements, "an item")
 //
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -27,7 +25,7 @@ func main() {
 			// Knowing the basic mechanics of slices, how
 			// would you go about constructing a slice of
 			// all even numbers from 1 up to 20?
-			evens = ??
+			evens = append(evens, i)
 		}
 	}
 	fmt.Println(evens)
